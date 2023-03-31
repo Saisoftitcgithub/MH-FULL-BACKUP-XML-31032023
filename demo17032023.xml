@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="BeginIfCommand" CommandID="597acc1a-5384-4aeb-b348-ab32cc09bb11" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Folder Exists">
+        <v_IfActionParameterTable>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="I9AcPionPara1Table031723.100127">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I9AcPionPara1Table031723.100127" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="I9AcPionPara1Table031723.100127" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <I9AcPionPara1Table031723.100127 diffgr:id="I9AcPionPara1Table031723.1001271" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Name>Folder Path</Parameter_x0020_Name>
+                <Parameter_x0020_Value>⦃vOutPutFldr⦄\⦃vFileName⦄</Parameter_x0020_Value>
+              </I9AcPionPara1Table031723.100127>
+              <I9AcPionPara1Table031723.100127 diffgr:id="I9AcPionPara1Table031723.1001272" msdata:rowOrder="1" diffgr:hasChanges="modified">
+                <Parameter_x0020_Name>True When</Parameter_x0020_Name>
+                <Parameter_x0020_Value>It Does Exist</Parameter_x0020_Value>
+              </I9AcPionPara1Table031723.100127>
+            </DocumentElement>
+            <diffgr:before>
+              <I9AcPionPara1Table031723.100127 diffgr:id="I9AcPionPara1Table031723.1001271" msdata:rowOrder="0">
+                <Parameter_x0020_Name>Folder Path</Parameter_x0020_Name>
+                <Parameter_x0020_Value>{vOutPutFldr}\{vFileName}</Parameter_x0020_Value>
+              </I9AcPionPara1Table031723.100127>
+              <I9AcPionPara1Table031723.100127 diffgr:id="I9AcPionPara1Table031723.1001272" msdata:rowOrder="1">
+                <Parameter_x0020_Name>True When</Parameter_x0020_Name>
+                <Parameter_x0020_Value>It Does Exist</Parameter_x0020_Value>
+              </I9AcPionPara1Table031723.100127>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_IfActionParameterTable>
+      </ScriptCommand>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="GetFilesCommand" CommandID="8c07ccc2-f49f-4870-84c6-cdadae4bb492" CommandName="GetFilesCommand" IsCommented="false" SelectionName="Get Files" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_SourceFolderPath="⦃vOutPutFldr⦄\⦃vFileName⦄" v_SearchFileName="" v_SearchMethod="Starts with" v_SearchExtension="pdf" v_UserVariableName="filepath" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="GetListCountCommand" CommandID="7b17be64-4536-4831-9923-e6909a02bb25" CommandName="GetListCountCommand" IsCommented="false" SelectionName="Get List Count" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_ListName="filepath" v_UserVariableName="listFilesCount" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="BeginIfCommand" CommandID="2105331b-3ba4-4a91-9bb4-3a17de600209" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Numeric Compare">
+          <v_IfActionParameterTable>
+            <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+              <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I8AcPionPara55Table020523.105519" msdata:UseCurrentLocale="true">
+                <xs:complexType>
+                  <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="I8AcPionPara55Table020523.105519">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                          <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:schema>
+            <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+              <DocumentElement>
+                <I8AcPionPara55Table020523.105519 diffgr:id="I8AcPionPara55Table020523.1055191" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                  <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>⦃listFilesCount⦄</Parameter_x0020_Value>
+                </I8AcPionPara55Table020523.105519>
+                <I8AcPionPara55Table020523.105519 diffgr:id="I8AcPionPara55Table020523.1055192" msdata:rowOrder="1" diffgr:hasChanges="modified">
+                  <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>is greater than</Parameter_x0020_Value>
+                </I8AcPionPara55Table020523.105519>
+                <I8AcPionPara55Table020523.105519 diffgr:id="I8AcPionPara55Table020523.1055193" msdata:rowOrder="2" diffgr:hasChanges="modified">
+                  <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>0</Parameter_x0020_Value>
+                </I8AcPionPara55Table020523.105519>
+              </DocumentElement>
+              <diffgr:before>
+                <I8AcPionPara55Table020523.105519 diffgr:id="I8AcPionPara55Table020523.1055191" msdata:rowOrder="0">
+                  <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>{listFilesCount}</Parameter_x0020_Value>
+                </I8AcPionPara55Table020523.105519>
+                <I8AcPionPara55Table020523.105519 diffgr:id="I8AcPionPara55Table020523.1055192" msdata:rowOrder="1">
+                  <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>is greater than</Parameter_x0020_Value>
+                </I8AcPionPara55Table020523.105519>
+                <I8AcPionPara55Table020523.105519 diffgr:id="I8AcPionPara55Table020523.1055193" msdata:rowOrder="2">
+                  <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>0</Parameter_x0020_Value>
+                </I8AcPionPara55Table020523.105519>
+              </diffgr:before>
+            </diffgr:diffgram>
+          </v_IfActionParameterTable>
+        </ScriptCommand>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="BeginListLoopCommand" CommandID="cc7861b9-3ae1-40f7-9fe8-af03a699b175" CommandName="BeginListLoopCommand" IsCommented="false" SelectionName="Loop List" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_LoopParameter="⦃filepath⦄" />
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="FormatFilePathCommnad" CommandID="6af87251-49cc-4ec2-a94a-aac2ba35be85" CommandName="Format File PathCommand" IsCommented="false" SelectionName="Format File Path" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_SourceFilePath="⦃filepath⦄" v_Format="FileNameWithoutExtension" v_Result="filename" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="aadb6bdd-a1b9-4b38-818f-03990a6fe750" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="filename" v_Input="⦃filename⦄" v_ReplaceInputVariables="Yes" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="MessageBoxCommand" CommandID="d997cb88-c0d9-411c-a37e-f57a137ffad0" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃filename⦄" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="RunPowershellCommand" CommandID="82a03f5d-999f-4710-bfc3-2fc8347cfaaf" CommandName="RunPowershellCommand" IsCommented="false" SelectionName="Run Powershell" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_ScriptPath="C:\Users\kannan\Desktop\MH\Upload file.ps" v_PowerShellArgs="⦃filename⦄⦃filepath⦄" v_ReplaceScriptVariables="Yes" v_applyToVariableName="vCookie" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="MessageBoxCommand" CommandID="4510f9e8-3676-487a-9786-da5e19a5fc64" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vCookie⦄" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="EndLoopCommand" CommandID="be128a47-52f2-4322-a128-78338f2eeace" CommandName="EndLoopCommand" IsCommented="false" SelectionName="End Loop" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="EndIfCommand" CommandID="a8b73318-848e-469e-b34b-e636a45f8d38" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="ElseCommand" CommandID="0a94ef88-3437-48e0-b3b3-d5ab913da6d5" CommandName="ElseCommand" IsCommented="false" SelectionName="Else" DefaultPause="0" LineNumber="13" PauseBeforeExeucution="false" v_Comment="Folder does not Exits" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="CommentCommand" CommandID="9348805d-9185-4410-95cb-5027511bb136" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="14" PauseBeforeExeucution="false" v_Comment="Items in this section will run if the statement is true" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="EndIfCommand" CommandID="eb54169b-e519-4a15-b9e5-ee7c42f0b667" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="15" PauseBeforeExeucution="false" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+    </ScriptAction>
+  </Commands>
+  <Info>
+    <TasktVersion>3.5.1.14</TasktVersion>
+    <Author />
+    <LastRunTime>2023-03-19T10:47:44.58925+04:00</LastRunTime>
+    <RunTimes>33</RunTimes>
+    <ScriptVersion>0.0.0</ScriptVersion>
+    <Description />
+  </Info>
+  <Variables>
+    <ScriptVariable>
+      <VariableName>filename</VariableName>
+      <VariableValue xsi:type="xsd:string">1123</VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>filepath</VariableName>
+      <VariableValue xsi:type="xsd:string">C:\Users\kannan\Desktop\MH\data.pdf</VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>vFileName</VariableName>
+      <VariableValue xsi:type="xsd:string">GRV</VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>vOutPutFldr</VariableName>
+      <VariableValue xsi:type="xsd:string">C:\MH\GRV\output</VariableValue>
+    </ScriptVariable>
+  </Variables>
+</Script>

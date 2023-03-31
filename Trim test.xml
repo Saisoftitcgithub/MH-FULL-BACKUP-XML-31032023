@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="StartProcessCommand" CommandID="099d4bcf-2a28-46e2-830e-2a6003a5e0de" CommandName="StartProcessCommand" IsCommented="true" SelectionName="Start Process" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" CommandEnabled="true" v_ProgramName="C:\Users\kannan\Desktop\MH\testlogin.ps" v_ProgramArgs="C:\Users\kannan\Desktop\MH\testlogin.ps" v_WaitForExit="vCheck" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="4510f9e8-3676-487a-9786-da5e19a5fc64" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vCheck⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RunPowershellCommand" CommandID="82a03f5d-999f-4710-bfc3-2fc8347cfaaf" CommandName="RunPowershellCommand" IsCommented="false" SelectionName="Run Powershell" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_ScriptPath="C:\Users\kannan\Desktop\MH\testlogin.ps" v_PowerShellArgs="Username &quot;admin&quot; Password &quot;password&quot;" v_ReplaceScriptVariables="No" v_applyToVariableName="vCookie" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="4510f9e8-3676-487a-9786-da5e19a5fc64" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vCookie⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ModifyTextCommand" CommandID="9000cb8a-b151-46c0-bbe8-79a8cb0819c1" CommandName="ModifyTextCommand" IsCommented="true" SelectionName="Modify Text" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="⦃vCookie⦄" v_ConvertType=" Trim Start" v_applyToVariableName="vData" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CheckTextCommand" CommandID="3afa2869-842c-420e-a9e4-b5f42ae5db17" CommandName="CheckTextCommand" IsCommented="true" SelectionName="Check Text" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="⦃vCookie⦄" v_CheckMethod="Index of" v_CheckParameter=";" v_applyToVariableName="vData" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="f3f2ae31-e05d-4b9c-bdeb-12c26be486aa" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vData⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SubstringTextCommand" CommandID="8abb4f2c-9e05-46ca-9ee0-fd712ed4d264" CommandName="SubstringTextCommand" IsCommented="true" SelectionName="Substring Text" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="⦃vCookie⦄" v_startIndex="0" v_stringLength="⦃vData⦄-1" v_applyToVariableName="vOutput" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="74609441-8c1c-4ce7-bf89-125ed2cb195a" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vOutput⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RESTCommand" CommandID="44bcd8e2-668b-405b-97e6-305c4e70e5d3" CommandName="RESTCommand" IsCommented="true" SelectionName="Execute REST API" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="http://192.168.0.150:80/seeddms/restapi/index.php/folder/FLPR-17-001" v_APIMethodType="GET" v_userVariableName="vFolder" v_RequestFormat="Json">
+        <v_AdvancedParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="A16vRESTPara39Table031623.103951">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A16vRESTPara39Table031623.103951" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="A16vRESTPara39Table031623.103951" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <A16vRESTPara39Table031623.103951 diffgr:id="A16vRESTPara39Table031623.1039511" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Name>Cookie</Parameter_x0020_Name>
+                <Parameter_x0020_Value>⦃vOutput⦄</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>Cookie</Parameter_x0020_Type>
+              </A16vRESTPara39Table031623.103951>
+            </DocumentElement>
+            <diffgr:before>
+              <A16vRESTPara39Table031623.103951 diffgr:id="A16vRESTPara39Table031623.1039511" msdata:rowOrder="0">
+                <Parameter_x0020_Name>Cookie</Parameter_x0020_Name>
+                <Parameter_x0020_Value>{vOutput}</Parameter_x0020_Value>
+                <Parameter_x0020_Type>Cookie</Parameter_x0020_Type>
+              </A16vRESTPara39Table031623.103951>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_AdvancedParameters>
+        <v_RESTParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="RESTPara39Table031623.103951">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara39Table031623.103951" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="RESTPara39Table031623.103951" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+        </v_RESTParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="4fc435fb-8611-4e03-96aa-f24ed94058e5" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vFolder⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+  </Commands>
+  <Info>
+    <TasktVersion>3.5.1.14</TasktVersion>
+    <Author />
+    <LastRunTime>2023-03-17T16:08:06.9768348+04:00</LastRunTime>
+    <RunTimes>14</RunTimes>
+    <ScriptVersion>0.0.0</ScriptVersion>
+    <Description />
+  </Info>
+  <Variables />
+</Script>

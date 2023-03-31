@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RunPowershellCommand" CommandID="c922a635-18ac-4e40-90b6-8eddbda087f8" CommandName="RunPowershellCommand" IsCommented="true" SelectionName="Run Powershell" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" CommandEnabled="true" v_ScriptPath="C:\Users\kannan\Desktop\MH\loginps.ps" v_PowerShellArgs="-NoProfile -ExecutionPolicy unrestricted" v_ReplaceScriptVariables="No" v_applyToVariableName="vPower" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="43335926-0e44-4d67-875c-295281fdd21d" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vPower⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RunPowershellCommand" CommandID="c922a635-18ac-4e40-90b6-8eddbda087f8" CommandName="RunPowershellCommand" IsCommented="true" SelectionName="Run Powershell" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_ScriptPath="C:\Users\kannan\Desktop\MH\psgetfolder.ps" v_PowerShellArgs="-NoProfile -ExecutionPolicy unrestricted" v_ReplaceScriptVariables="No" v_applyToVariableName="vPowerget" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="43335926-0e44-4d67-875c-295281fdd21d" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vPowerget⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RESTCommand" CommandID="8474b392-ac65-49a0-8b94-f02e29f99d39" CommandName="RESTCommand" IsCommented="true" SelectionName="Execute REST API" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="http://192.168.0.150:80/seeddms/restapi/index.php" v_APIEndPoint="/login" v_APIMethodType="POST" v_userVariableName="vResult" v_RequestFormat="Json">
+        <v_AdvancedParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="A21vRESTPara50Table022123.105015">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A21vRESTPara50Table022123.105015" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="A21vRESTPara50Table022123.105015" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <A21vRESTPara50Table022123.105015 diffgr:id="A21vRESTPara50Table022123.1050151" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Name>user</Parameter_x0020_Name>
+                <Parameter_x0020_Value>admin</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>GetOrPost</Parameter_x0020_Type>
+              </A21vRESTPara50Table022123.105015>
+              <A21vRESTPara50Table022123.105015 diffgr:id="A21vRESTPara50Table022123.1050152" msdata:rowOrder="1" diffgr:hasChanges="modified">
+                <Parameter_x0020_Name>pass</Parameter_x0020_Name>
+                <Parameter_x0020_Value>admin</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>GetOrPost</Parameter_x0020_Type>
+              </A21vRESTPara50Table022123.105015>
+            </DocumentElement>
+            <diffgr:before>
+              <A21vRESTPara50Table022123.105015 diffgr:id="A21vRESTPara50Table022123.1050151" msdata:rowOrder="0">
+                <Parameter_x0020_Name>user</Parameter_x0020_Name>
+                <Parameter_x0020_Value>admin</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>GetOrPost</Parameter_x0020_Type>
+              </A21vRESTPara50Table022123.105015>
+              <A21vRESTPara50Table022123.105015 diffgr:id="A21vRESTPara50Table022123.1050152" msdata:rowOrder="1">
+                <Parameter_x0020_Name>pass</Parameter_x0020_Name>
+                <Parameter_x0020_Value>admin</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>GetOrPost</Parameter_x0020_Type>
+              </A21vRESTPara50Table022123.105015>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_AdvancedParameters>
+        <v_RESTParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="RESTPara50Table022123.105015">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara50Table022123.105015" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="RESTPara50Table022123.105015" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <RESTPara50Table022123.105015 diffgr:id="RESTPara50Table022123.1050151" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>Cookie</Parameter_x0020_Name>
+                <Parameter_x0020_Value>mydms_session=</Parameter_x0020_Value>
+              </RESTPara50Table022123.105015>
+            </DocumentElement>
+            <diffgr:before>
+              <RESTPara50Table022123.105015 diffgr:id="RESTPara50Table022123.1050151" msdata:rowOrder="0">
+                <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>Cookie</Parameter_x0020_Name>
+                <Parameter_x0020_Value>mydms_session=</Parameter_x0020_Value>
+              </RESTPara50Table022123.105015>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_RESTParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="4510f9e8-3676-487a-9786-da5e19a5fc64" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Show Message" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vResult⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RESTCommand" CommandID="f843186f-43ef-4469-b726-d3edb76be8b9" CommandName="RESTCommand" IsCommented="false" SelectionName="Execute REST API" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="http://192.168.0.150:80/seeddms/restapi/index.php" v_APIEndPoint="/folder/" v_APIMethodType="GET" v_userVariableName="vId" v_RequestFormat="Json">
+        <v_AdvancedParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="A2vRESTPara39Table030223.103932">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A2vRESTPara39Table030223.103932" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="A2vRESTPara39Table030223.103932" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+        </v_AdvancedParameters>
+        <v_RESTParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="RESTPara39Table030223.103932">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara39Table030223.103932" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="RESTPara39Table030223.103932" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <RESTPara39Table030223.103932 diffgr:id="RESTPara39Table030223.1039321" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Type>PARAMETER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>id</Parameter_x0020_Name>
+                <Parameter_x0020_Value>⦃id⦄</Parameter_x0020_Value>
+              </RESTPara39Table030223.103932>
+              <RESTPara39Table030223.103932 diffgr:id="RESTPara39Table030223.1039322" msdata:rowOrder="1" diffgr:hasChanges="modified">
+                <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>Cookie</Parameter_x0020_Name>
+                <Parameter_x0020_Value>mydms_session=19c02c083fa3916fe6f9192d8c66d998</Parameter_x0020_Value>
+              </RESTPara39Table030223.103932>
+            </DocumentElement>
+            <diffgr:before>
+              <RESTPara39Table030223.103932 diffgr:id="RESTPara39Table030223.1039321" msdata:rowOrder="0">
+                <Parameter_x0020_Type>PARAMETER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>id</Parameter_x0020_Name>
+                <Parameter_x0020_Value>{id}</Parameter_x0020_Value>
+              </RESTPara39Table030223.103932>
+              <RESTPara39Table030223.103932 diffgr:id="RESTPara39Table030223.1039322" msdata:rowOrder="1">
+                <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>Cookie</Parameter_x0020_Name>
+                <Parameter_x0020_Value>mydms_session=19c02c083fa3916fe6f9192d8c66d998</Parameter_x0020_Value>
+              </RESTPara39Table030223.103932>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_RESTParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="d3998404-f9fc-4c47-a7eb-49b979539a9c" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vId⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RESTCommand" CommandID="44bcd8e2-668b-405b-97e6-305c4e70e5d3" CommandName="RESTCommand" IsCommented="false" SelectionName="Execute REST API" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="http://192.168.0.150:80/seeddms/restapi/index.php/folder/FLPR-17-001" v_APIMethodType="GET" v_userVariableName="vFolder" v_RequestFormat="Json">
+        <v_AdvancedParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="A16vRESTPara39Table031623.103951">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A16vRESTPara39Table031623.103951" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="A16vRESTPara39Table031623.103951" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <A16vRESTPara39Table031623.103951 diffgr:id="A16vRESTPara39Table031623.1039511" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Name>Cookie</Parameter_x0020_Name>
+                <Parameter_x0020_Value>mydms_session=19c02c083fa3916fe6f9192d8c66d998</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>Cookie</Parameter_x0020_Type>
+              </A16vRESTPara39Table031623.103951>
+            </DocumentElement>
+            <diffgr:before>
+              <A16vRESTPara39Table031623.103951 diffgr:id="A16vRESTPara39Table031623.1039511" msdata:rowOrder="0">
+                <Parameter_x0020_Name>Cookie</Parameter_x0020_Name>
+                <Parameter_x0020_Value>mydms_session=19c02c083fa3916fe6f9192d8c66d998</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>Cookie</Parameter_x0020_Type>
+              </A16vRESTPara39Table031623.103951>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_AdvancedParameters>
+        <v_RESTParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="RESTPara39Table031623.103951">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara39Table031623.103951" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="RESTPara39Table031623.103951" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <RESTPara39Table031623.103951 diffgr:id="RESTPara39Table031623.1039511" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>Accept</Parameter_x0020_Name>
+                <Parameter_x0020_Value>*/*</Parameter_x0020_Value>
+              </RESTPara39Table031623.103951>
+            </DocumentElement>
+            <diffgr:before>
+              <RESTPara39Table031623.103951 diffgr:id="RESTPara39Table031623.1039511" msdata:rowOrder="0">
+                <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>Accept</Parameter_x0020_Name>
+                <Parameter_x0020_Value>*/*</Parameter_x0020_Value>
+              </RESTPara39Table031623.103951>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_RESTParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="4510f9e8-3676-487a-9786-da5e19a5fc64" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vFolder⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RESTCommand" CommandID="8474b392-ac65-49a0-8b94-f02e29f99d39" CommandName="RESTCommand" IsCommented="true" SelectionName="Execute REST API" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="⦃vLoginbase⦄" v_APIEndPoint="⦃vEndlogin⦄" v_APIMethodType="POST" v_userVariableName="vResult1" v_RequestFormat="Json">
+        <v_AdvancedParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="A21vRESTPara50Table022123.105015">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A21vRESTPara50Table022123.105015" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="A21vRESTPara50Table022123.105015" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <A21vRESTPara50Table022123.105015 diffgr:id="A21vRESTPara50Table022123.1050151" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Name>user</Parameter_x0020_Name>
+                <Parameter_x0020_Value>admin</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>GetOrPost</Parameter_x0020_Type>
+              </A21vRESTPara50Table022123.105015>
+              <A21vRESTPara50Table022123.105015 diffgr:id="A21vRESTPara50Table022123.1050152" msdata:rowOrder="1" diffgr:hasChanges="modified">
+                <Parameter_x0020_Name>pass</Parameter_x0020_Name>
+                <Parameter_x0020_Value>admin</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>GetOrPost</Parameter_x0020_Type>
+              </A21vRESTPara50Table022123.105015>
+            </DocumentElement>
+            <diffgr:before>
+              <A21vRESTPara50Table022123.105015 diffgr:id="A21vRESTPara50Table022123.1050151" msdata:rowOrder="0">
+                <Parameter_x0020_Name>user</Parameter_x0020_Name>
+                <Parameter_x0020_Value>admin</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>GetOrPost</Parameter_x0020_Type>
+              </A21vRESTPara50Table022123.105015>
+              <A21vRESTPara50Table022123.105015 diffgr:id="A21vRESTPara50Table022123.1050152" msdata:rowOrder="1">
+                <Parameter_x0020_Name>pass</Parameter_x0020_Name>
+                <Parameter_x0020_Value>admin</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>GetOrPost</Parameter_x0020_Type>
+              </A21vRESTPara50Table022123.105015>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_AdvancedParameters>
+        <v_RESTParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="RESTPara50Table022123.105015">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara50Table022123.105015" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="RESTPara50Table022123.105015" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+        </v_RESTParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RESTCommand" CommandID="f843186f-43ef-4469-b726-d3edb76be8b9" CommandName="RESTCommand" IsCommented="true" SelectionName="Execute REST API" DefaultPause="0" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="http://192.168.0.150:80/seeddms/restapi/index.php" v_APIEndPoint="/folder?id=⦃id⦄" v_APIMethodType="GET" v_userVariableName="vId" v_RequestFormat="Json">
+        <v_AdvancedParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="A2vRESTPara39Table030223.103932">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A2vRESTPara39Table030223.103932" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="A2vRESTPara39Table030223.103932" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <A2vRESTPara39Table030223.103932 diffgr:id="A2vRESTPara39Table030223.1039321" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Name>id</Parameter_x0020_Name>
+                <Parameter_x0020_Value>FLPR-17-001</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>QueryString</Parameter_x0020_Type>
+              </A2vRESTPara39Table030223.103932>
+            </DocumentElement>
+            <diffgr:before>
+              <A2vRESTPara39Table030223.103932 diffgr:id="A2vRESTPara39Table030223.1039321" msdata:rowOrder="0">
+                <Parameter_x0020_Name>id</Parameter_x0020_Name>
+                <Parameter_x0020_Value>FLPR-17-001</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>QueryString</Parameter_x0020_Type>
+              </A2vRESTPara39Table030223.103932>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_AdvancedParameters>
+        <v_RESTParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="RESTPara39Table030223.103932">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara39Table030223.103932" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="RESTPara39Table030223.103932" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+        </v_RESTParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="HTTPRequestCommand" CommandID="ecc66aa2-1dc7-4d3f-a725-79290f3e39b4" CommandName="HTTPRequestCommand" IsCommented="false" SelectionName="HTTP Request" DefaultPause="0" LineNumber="13" PauseBeforeExeucution="false" CommandEnabled="true" v_WebRequestURL="http://192.168.0.150:80/seeddms/restapi/index.php/folder/⦃id⦄" v_WebRequestCredentials="Yes" v_userVariableName="vId" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="d3998404-f9fc-4c47-a7eb-49b979539a9c" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="14" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vId⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RESTCommand" CommandID="4c9d6919-c1cb-4ea8-8f6d-17bca4be6a03" CommandName="RESTCommand" IsCommented="false" SelectionName="Execute REST API" DefaultPause="0" LineNumber="15" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="http://192.168.0.150:80/seeddms/restapi/index.php/folder/⦃id⦄" v_APIEndPoint="" v_userVariableName="vId" v_RequestFormat="Json">
+        <v_AdvancedParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="A15vRESTPara48Table031523.104825">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A15vRESTPara48Table031523.104825" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="A15vRESTPara48Table031523.104825" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <A15vRESTPara48Table031523.104825 diffgr:id="A15vRESTPara48Table031523.1048251" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Name>Cookie</Parameter_x0020_Name>
+                <Parameter_x0020_Value>mydms_session=bf4e5259093c04cc04567aafb3e15a75</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>Cookie</Parameter_x0020_Type>
+              </A15vRESTPara48Table031523.104825>
+            </DocumentElement>
+            <diffgr:before>
+              <A15vRESTPara48Table031523.104825 diffgr:id="A15vRESTPara48Table031523.1048251" msdata:rowOrder="0">
+                <Parameter_x0020_Name>Cookie</Parameter_x0020_Name>
+                <Parameter_x0020_Value>mydms_session=bf4e5259093c04cc04567aafb3e15a75</Parameter_x0020_Value>
+                <Content_x0020_Type></Content_x0020_Type>
+                <Parameter_x0020_Type>Cookie</Parameter_x0020_Type>
+              </A15vRESTPara48Table031523.104825>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_AdvancedParameters>
+        <v_RESTParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="RESTPara48Table031523.104825">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara48Table031523.104825" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="RESTPara48Table031523.104825" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+        </v_RESTParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="d3998404-f9fc-4c47-a7eb-49b979539a9c" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="16" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vId⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="AddVariableCommand" CommandID="d29f95ff-56d6-4723-9e65-5aa4d9fd433c" CommandName="AddVariableCommand" IsCommented="false" SelectionName="New Variable" DefaultPause="0" LineNumber="17" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="baseUrl" v_Input="&quot;http://192.168.0.150:80/seeddms/restapi/index.phpfolder/⦃0⦄&quot;" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="76f20edf-42bd-4f92-a2f0-bd695a6fc148" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="18" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃baseUrl⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="AddVariableCommand" CommandID="c2cd5b26-e9f4-4cc1-918b-98e6d8320e23" CommandName="AddVariableCommand" IsCommented="false" SelectionName="New Variable" DefaultPause="0" LineNumber="19" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="id" v_Input="&quot;FLPR-17-001&quot;" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="76f20edf-42bd-4f92-a2f0-bd695a6fc148" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="20" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃id⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="AddVariableCommand" CommandID="96131a82-49e3-48f0-9e29-c8f3b79504e6" CommandName="AddVariableCommand" IsCommented="false" SelectionName="New Variable" DefaultPause="0" LineNumber="21" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="url" v_Input="⦃baseUrl⦄⦃id⦄">
+        <v_IfExists />
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="76f20edf-42bd-4f92-a2f0-bd695a6fc148" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="22" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃url⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RESTCommand" CommandID="f843186f-43ef-4469-b726-d3edb76be8b9" CommandName="RESTCommand" IsCommented="false" SelectionName="Execute REST API" DefaultPause="0" LineNumber="23" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="" v_APIEndPoint="⦃url⦄" v_APIMethodType="GET" v_userVariableName="vId" v_RequestFormat="Json">
+        <v_AdvancedParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="A2vRESTPara39Table030223.103932">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A2vRESTPara39Table030223.103932" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="A2vRESTPara39Table030223.103932" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+        </v_AdvancedParameters>
+        <v_RESTParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="RESTPara39Table030223.103932">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara39Table030223.103932" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="RESTPara39Table030223.103932" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+        </v_RESTParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RunCustomCodeCommand" CommandID="83140286-f7e7-420a-b754-b33d260a638b" CommandName="RunCustomCodeCommand" IsCommented="false" SelectionName="Run Custom Code" DefaultPause="0" LineNumber="24" PauseBeforeExeucution="false" CommandEnabled="true" v_Code="# Define the API endpoint&#xA;$endpoint = &quot;http://localhost:81/seeddms_base/restapi/index.php/login&quot;&#xA;&#xA;# Define the request body (if required)&#xA;$requestBody = @{&#xA;    username = &quot;admin&quot;&#xA;    password = &quot;admin&quot;&#xA;}&#xA;&#xA;# Define the request headers (if required)&#xA;$requestHeaders = @{&#xA;    &quot;Content-Type&quot; = &quot;application/x-www-form-urlencoded&quot;&#xA;    }&#xA;&#xA;# Send the API request&#xA;$response = Invoke-RestMethod -Uri $endpoint -Method POST -Headers $requestHeaders -Body $requestBody&#xA;&#xA;# Output the response&#xA;$response" v_Args="vId" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RESTCommand" CommandID="f843186f-43ef-4469-b726-d3edb76be8b9" CommandName="RESTCommand" IsCommented="false" SelectionName="Execute REST API" DefaultPause="0" LineNumber="25" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="http://192.168.0.150:80/seeddms/restapi/index.php/folder/12/document?name=test.png&amp;origfilename=test.png&amp;comment=test" v_APIEndPoint="" v_APIMethodType="PUT" v_userVariableName="vData" v_RequestFormat="Json">
+        <v_AdvancedParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="A2vRESTPara39Table030223.103932">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A2vRESTPara39Table030223.103932" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="A2vRESTPara39Table030223.103932" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+        </v_AdvancedParameters>
+        <v_RESTParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="RESTPara39Table030223.103932">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara39Table030223.103932" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="RESTPara39Table030223.103932" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <RESTPara39Table030223.103932 diffgr:id="RESTPara39Table030223.1039321" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Type>PARAMETER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>name</Parameter_x0020_Name>
+                <Parameter_x0020_Value>test.png</Parameter_x0020_Value>
+              </RESTPara39Table030223.103932>
+              <RESTPara39Table030223.103932 diffgr:id="RESTPara39Table030223.1039322" msdata:rowOrder="1" diffgr:hasChanges="modified">
+                <Parameter_x0020_Type>PARAMETER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>origfilename</Parameter_x0020_Name>
+                <Parameter_x0020_Value>test.png</Parameter_x0020_Value>
+              </RESTPara39Table030223.103932>
+              <RESTPara39Table030223.103932 diffgr:id="RESTPara39Table030223.1039323" msdata:rowOrder="2" diffgr:hasChanges="modified">
+                <Parameter_x0020_Type>PARAMETER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>comment</Parameter_x0020_Name>
+                <Parameter_x0020_Value>test</Parameter_x0020_Value>
+              </RESTPara39Table030223.103932>
+            </DocumentElement>
+            <diffgr:before>
+              <RESTPara39Table030223.103932 diffgr:id="RESTPara39Table030223.1039321" msdata:rowOrder="0">
+                <Parameter_x0020_Type>PARAMETER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>name</Parameter_x0020_Name>
+                <Parameter_x0020_Value>test.png</Parameter_x0020_Value>
+              </RESTPara39Table030223.103932>
+              <RESTPara39Table030223.103932 diffgr:id="RESTPara39Table030223.1039322" msdata:rowOrder="1">
+                <Parameter_x0020_Type>PARAMETER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>origfilename</Parameter_x0020_Name>
+                <Parameter_x0020_Value>test.png</Parameter_x0020_Value>
+              </RESTPara39Table030223.103932>
+              <RESTPara39Table030223.103932 diffgr:id="RESTPara39Table030223.1039323" msdata:rowOrder="2">
+                <Parameter_x0020_Type>PARAMETER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>comment</Parameter_x0020_Name>
+                <Parameter_x0020_Value>test</Parameter_x0020_Value>
+              </RESTPara39Table030223.103932>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_RESTParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="d3998404-f9fc-4c47-a7eb-49b979539a9c" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="26" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vData⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+  </Commands>
+  <Info>
+    <TasktVersion>3.5.1.14</TasktVersion>
+    <Author />
+    <LastRunTime>2023-03-16T14:11:21.6450906+04:00</LastRunTime>
+    <RunTimes>143</RunTimes>
+    <ScriptVersion>0.0.0</ScriptVersion>
+    <Description />
+  </Info>
+  <Variables>
+    <ScriptVariable>
+      <VariableName>vEndlogin</VariableName>
+      <VariableValue xsi:type="xsd:string">/login</VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>vLoginbase</VariableName>
+      <VariableValue xsi:type="xsd:string">http://192.168.0.150:80/seeddms/restapi/index.php</VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>vUrl</VariableName>
+      <VariableValue xsi:type="xsd:string">/folder/FLPR-17-001</VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>id</VariableName>
+      <VariableValue xsi:type="xsd:string">FLPR-17-001</VariableValue>
+    </ScriptVariable>
+  </Variables>
+</Script>

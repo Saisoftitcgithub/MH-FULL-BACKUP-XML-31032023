@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="GetPDFImagesCommand" CommandID="b2a9099f-d960-4554-a205-68fea82e2191" CommandName="GetPDFImagesCommand" IsCommented="false" SelectionName="Get PDF Images" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="C:\MH\GRV\Unprocessed\GRV SAMPLES_ORIGINAL_R1.pdf" v_TargetFolderName="C:\MH\GRV\Unprocessed" v_TextFileName="1" v_applyToVariableName="vPdf" />
+    </ScriptAction>
+  </Commands>
+  <Info>
+    <TasktVersion>3.5.1.14</TasktVersion>
+    <Author />
+    <LastRunTime>2023-03-27T11:36:48.4780161+04:00</LastRunTime>
+    <RunTimes>1</RunTimes>
+    <ScriptVersion>0.0.0</ScriptVersion>
+    <Description />
+  </Info>
+  <Variables />
+</Script>
